@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Añadir nuevo álbum</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<header>
+  <h1>Añadir nuevo álbum</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Página Principal</a></li>
+      <li><a href="members.html">Miembros</a></li>
+      <li><a href="formulario.html">Newsletter</a></li>
+      <li><a href="albums.html">Discos</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <form id="album-form">
+    <label for="titulo">Título:</label>
+    <input type="text" id="titulo" name="titulo" required><br>
+
+    <label for="year">Año:</label>
+    <input type="number" id="year" name="año" required><br>
+
+    <label for="portada">URL de portada:</label>
+    <input type="text" id="portada" name="portada" required><br>
+
+    <label for="descripcion">Descripción:</label><br>
+    <textarea id="descripcion" name="descripcion" rows="4" cols="50" required></textarea><br>
+
+    <button type="submit">Crear álbum</button>
+  </form>
+
+  <hr>
+  <h2>Añadir nueva canción</h2>
+  <form id="song-form">
+    <label for="tituloCancion">Título:</label>
+    <input type="text" id="tituloCancion" name="tituloCancion" required><br>
+
+    <label for="duracion">Duración:</label>
+    <input type="number" id="duracion" name="duracion" required><br>
+
+    <button type="submit">Crear canción</button>
+  </form>
+
+  <div id="song-resultado"></div>
+
+
+  <div id="resultado"></div>
+</main>
+<script src="js/albums.js"></script>
+</body>
+</html>
