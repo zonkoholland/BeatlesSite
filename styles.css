@@ -1,0 +1,176 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #282828;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.banner {
+    width: 100%; /* Full width of the screen */
+    height: 300px; /* Custom height, adjust as needed */
+    overflow: hidden; /* Ensures the image doesn’t spill out */
+    display: flex; /* Center content if needed */
+    justify-content: center;
+    align-items: center;
+    background-color: #000; /* Fallback background color */
+}
+
+.banner img {
+    width: 100%; /* Stretches the image across the screen width */
+    height: 100%; /* Ensures the image fills the container height */
+    object-fit: cover; /* Ensures the image maintains its aspect ratio */
+}
+
+header h1 {
+    font-size: 36px;
+    font-family: 'Georgia', serif;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.album-list {
+    width: 90%;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.album {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+
+
+}
+
+summary {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #ffffff;
+}
+
+summary img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+summary:hover {
+    background-color: #ddd;
+}
+
+
+details p {
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+footer {
+    background-color: #282828;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Center the table and style it */
+.member-table {
+    margin: 20px auto; /* Center the table horizontally */
+    font-size: 16px; /* Adjust font size */
+}
+
+/* Style the table headers */
+.member-table thead {
+    background-color: #282828; /* Dark header background */
+    color: white; /* White text for headers */
+}
+
+.member-table th,
+.member-table td {
+    padding: 12px 15px; /* Add padding to cells */
+    border: 1px solid #ddd; /* Light border for each cell */
+    text-align: left; /* Align text to the left */
+}
+
+.member-table tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+/* Member Grid Container */
+.member-images {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.member-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px; /* Spacing between grid items */
+    justify-content: center; /* Horizontally center the grid */
+    align-items: center; /* Vertically center the grid */
+    margin: 20px auto;
+    max-width: 600px; /* Restrict grid width */
+}
+
+/* Individual Member Card */
+.member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9; /* Light background for each card */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.member img {
+    width: 100px; /* Size of the member photos */
+    height: 100px;
+    object-fit: cover; /* Ensure the photos fit nicely */
+    margin-bottom: 10px;
+}
+
+.member p {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+

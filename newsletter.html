@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Beatles - Newsletter</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .newsletter-form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        .newsletter-form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .newsletter-form input[type="text"],
+
+        .newsletter-form input[type="email"],
+
+        .newsletter-form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+        }
+
+        .newsletter-form button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #282828;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+        }
+
+        .newsletter-form button:hover {
+            background-color: #444;
+        }
+
+        .newsletter-form a {
+            color: #282828;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>The Beatles - Newsletter</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Página Principal</a></li>
+            <li><a href="albums.html">Discos</a></li>
+            <li><a href="members.html">Miembros</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="banner">
+    <img src="images/banner.jpg" alt="The Beatles Banner">
+</div>
+
+<main>
+    <h2>Regístrate a nuestro newsletter</h2>
+    <p>Mantente actualizado sobre cualquier noticia adyacente a los Beatles además de actualizaciones a esta página. ¡Apúntate a nuestro newsletter!</p>
+
+    <form action="#" method="post" class="newsletter-form">
+        <label for="name">Nombre completo</label>
+        <input type="text" id="name" name="name" placeholder="Introduce tu nombre completo" required>
+
+        <label for="email">Correo Eléctronico:</label>
+        <input type="email" id="email" name="email" placeholder="Introduce tu correo electrónico" required>
+
+        <label for="preferences">¿Sobre qué deseas recibir actualizaciones?</label>
+        <select id="preferences" name="preferences">
+            <option value="news">Noticias recientes</option>
+            <option value="albums">Estrenos musicales</option>
+            <option value="events">Eventos futuros</option>
+        </select>
+
+        <label>
+            <input type="checkbox" name="agree" required>
+            Consento a recibir correos y confirmo la política de privacidad.
+        </label>
+
+        <button type="submit">Suscribirse</button>
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2025 Beatles Fan Project</p>
+</footer>
+</body>
+</html>
